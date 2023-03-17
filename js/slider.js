@@ -1,4 +1,4 @@
-// Random Images For Slider
+//---- Random Images For Slider -----------------
 const images = [
     'images/pic-1.jpg',
     'images/pic-2.jpg',
@@ -11,7 +11,7 @@ const images = [
     'images/pic-9.jpg',
 ]
 
-// Random Titles For Slider
+//---- Random Titles For Slider -----------------
 const titles = [
     'First Slide Label',
     'Second Slide Label',
@@ -24,7 +24,7 @@ const titles = [
     'Ninth Slide Label'
 ]
 
-// Random Descriptions For Slider
+//---- Random Descriptions For Slider -----------
 const description = [
     'This is my content for the first slide.',
     'This is my content for the second slide.',
@@ -38,14 +38,23 @@ const description = [
 ]
 
 let imgIndex = 0;
-const imgEl = document.getElementById("slider-img");
-const titleEl = document.getElementById("slider-title");
-const descEl = document.getElementById("slider-deccription");
+
+//---- Get Element By Id From Here -----------------
+const getElementId = (id) => {
+    const element = document.getElementById(id);
+    return element;
+}
+
+const imgEl = getElementId("slider-img");
+const titleEl = getElementId("slider-title");
+const descEl = getElementId("slider-deccription");
 
 setInterval(() => {
+
     if ((imgIndex === images.length) && (imgIndex === titles.length) && (imgIndex === description.length)) {
         imgIndex = 0;
     }
+
     const imgUrl = images[imgIndex];
     const titleUrl = titles[imgIndex];
     const descUrl = description[imgIndex];
@@ -53,4 +62,5 @@ setInterval(() => {
     titleEl.innerText = titleUrl;
     descEl.innerText = descUrl;
     imgIndex++;
+
 }, 2000)
