@@ -1,3 +1,4 @@
+// Random Images For Slider
 const images = [
     'images/pic-1.jpg',
     'images/pic-2.jpg',
@@ -10,6 +11,7 @@ const images = [
     'images/pic-9.jpg',
 ]
 
+// Random Titles For Slider
 const titles = [
     'First Slide Label',
     'Second Slide Label',
@@ -22,6 +24,7 @@ const titles = [
     'Ninth Slide Label'
 ]
 
+// Random Descriptions For Slider
 const description = [
     'This is my content for the first slide.',
     'This is my content for the second slide.',

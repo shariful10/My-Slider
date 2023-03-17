@@ -6,11 +6,13 @@ body {
     margin-top: 50px;
 }
 
+/* Title Style */
 .title {
     font-size: 50px;
     text-align: center;
 }
 
+/* Slider Style */
 .slider {
     width: 1000px;
     height: 500px;
